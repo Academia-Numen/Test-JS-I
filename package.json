@@ -1,0 +1,23 @@
+{
+  "name": "numen-academy",
+  "version": "1.0.0",
+  "description": "ejercicios basicos de javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false",
+    "test2": "jest JavaScript-1.test.js  --useStderr --json --outputFile=./JavaScript-1/tareas/tests/result.json",
+    "test3": "jest JavaScript-2.test.js  --useStderr --json --outputFile=./JavaScript-2/tareas/tests/result.json",
+    "test4": "jest JavaScript-3.test.js  --useStderr --json --outputFile=./JavaScript-3/tareas/tests/result.json"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "node-fetch": "^2.6.1",
+    "prompts": "^2.4.0"
+  },
+  "author": "Numen",
+  "license": "ISC",
+  "jest": {
+    "testURL": "http://localhost/"
+  }
+}
