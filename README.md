@@ -8,6 +8,6 @@ Para ejecutar cada uno de los test dividos por niveles es necesario que escriban
 
 * npm test JavaScript-2
 
-* npm test JavaScript-2
+* npm test JavaScript-3
 
 Según la tarea que quieran evaluar.
