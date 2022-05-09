@@ -56,19 +56,19 @@ describe('🔷Ejercicios Esenciales🔷', function() {
   });
 
   describe('nuevaResta', function() {
-    it('Deberia ser un booleano', function() {
+    it('Deberia devolver como true el resultado correcto', function() {
       expect(nuevaResta).toBe(true);
     });
   });
 
   describe('nuevaMultiplicacion', function() {
-    it('Deberia ser un booleano', function() {
+    it('Deberia devolver como true el resultado correcto', function() {
       expect(nuevaMultiplicacion).toBe(true);
     });
   });
 
   describe('nuevoModulo', function() {
-    it('Deberia ser un booleano', function() {
+    it('Deberia devolver como true el resultado correcto', function() {
       expect(nuevoModulo).toBe(true);
     });
   });
