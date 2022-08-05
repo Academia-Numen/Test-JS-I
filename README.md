@@ -2,7 +2,7 @@
 
 Desde la carpeta TEST-JS-I (Donde se encuentra el archivo package.json) deberán escribir 'npm install' (Sin las comillas) en la terminal para que se instalen las dependencias necesarias para que puedan ejecutarse los testing, caso contrario no se ejecutarán.
 
-Para ejecutar cada uno de los test dividos por niveles (clases) es necesario que escriban en la terminal desde la carpeta TEST-JS-I:
+Para ejecutar cada uno de los test dividos por niveles (clases) es necesario que escriban en la terminal, desde la carpeta TEST-JS-I y según la tarea que quieran evaluar, lo siguiente:
 
 * npm test Clase-2-Js
 
@@ -16,4 +16,18 @@ Para ejecutar cada uno de los test dividos por niveles (clases) es necesario que
 
 * npm test Clase-6-Js
 
-Según la tarea que quieran evaluar.
+También pueden ejecutarlos por la terminal a través de scripts (descriptos en el archivo package.json) con el comando npm run, de la siguiente manera:
+
+* npm run testClase2
+
+* npm run testClase3
+
+* npm run testClase4-1
+
+* npm run testClase4-2
+
+* npm run testClase5
+
+* npm run testClase6
+
+¡Éxitos!
