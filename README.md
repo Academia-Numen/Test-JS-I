@@ -30,6 +30,6 @@ También pueden ejecutarlos por la terminal a través de scripts (descriptos en 
 
 * npm run testClase6
 
-- Aclaración: las carpetas Clase-1-Js y Clase-7-Js no tienen tests automatizados. Deberán ser entregados como se soliciten por el docente.
+#### Aclaración: las carpetas Clase-1-Js y Clase-7-Js no tienen tests automatizados. Deberán ser entregados como se soliciten por el docente.
 
 ¡Éxitos!
