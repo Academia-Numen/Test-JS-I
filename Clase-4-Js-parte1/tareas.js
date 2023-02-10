@@ -74,10 +74,15 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   let prom = 0;
-  for (result of resultadosTest) {
-    prom += result;
-  }
-  return prom / resultadosTest.length;
+  prom = resultadosTest.reduce(accumulator, currentValue => {
+    accumulator + currentValue, 0;
+  });
+
+  return (prom / resultadosTest.length);
+  // for (result of resultadosTest) {
+  //   prom += result;
+  // }
+  // return prom / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
