@@ -79,10 +79,6 @@ function promedioResultadosTest(resultadosTest) {
   });
 
   return (prom / resultadosTest.length);
-  // for (result of resultadosTest) {
-  //   prom += result;
-  // }
-  // return prom / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
