@@ -63,22 +63,15 @@ function arrayContiene(array, elemento) {
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
-  let result = 0;
-  for (number of numeros) {
-    result += number;
-  }
-  return result;
+  return numeros.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
-  let prom = 0;
-  prom = resultadosTest.reduce(accumulator, currentValue => {
-    accumulator + currentValue, 0;
-  });
+  const adition = resultadosTest.reduce((accumulator, currentValue) => accumulator + currentValue,0);
 
-  return (prom / resultadosTest.length);
+  return (adition / resultadosTest.length);
 }
 
 function numeroMasGrande(numeros) {
