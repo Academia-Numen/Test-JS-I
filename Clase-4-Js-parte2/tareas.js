@@ -111,11 +111,17 @@ function sumarLikesDeUsuario(usuario) {
   // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
-  let total = 0;
-  for (post of usuario["posts"]) {
-    total += post["likes"];
-  }
-  return total;
+
+  // let total = 0;
+  // for (post of usuario["posts"]) {
+  //   total += post["likes"];
+  // }
+  // return total;
+
+  return usuario["posts"].reduce(
+    (accumulator, currentValue) => accumulator + currentValue["likes"],
+    0
+  );
 }
 
 function agregarMetodoCalculoDescuento(producto) {
