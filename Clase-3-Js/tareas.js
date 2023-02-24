@@ -4,7 +4,7 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  return (x >= y) ? x : y;
+  return Math.max(x,y);
 }
 
 function mayoriaDeEdad(edad) {
@@ -81,19 +81,13 @@ function colors(color) {
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
-  if ((numero === 5) || (numero === 10)) {
-    return true;
-  }
-  return false;
+  return ((numero === 5) || (numero === 10));
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
-  if ((numero > 20) && (numero < 50)) {
-    return true;
-  }
-  return false;
+  return ((numero > 20) && (numero < 50));
 }
 
 function esEntero(numero) {
@@ -105,10 +99,7 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
 
   // If numero rounded down is the same at numero then is a int
-  if (numero === Math.floor(numero)) {
-    return true;
-  }
-  return false;
+  return (numero === Math.floor(numero));
 }
 
 function fizzBuzz(numero) {
