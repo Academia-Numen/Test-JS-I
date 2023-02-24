@@ -63,7 +63,7 @@ function sonIguales(x, y) {
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  return (str1.length == str2.length);
+  return (str1.length === str2.length);
 }
 
 function menosQueNoventa(num) {
@@ -75,7 +75,7 @@ function menosQueNoventa(num) {
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
-  return num > 50;
+  return (num > 50);
 }
 
 function obtenerResto(x, y) {
@@ -86,13 +86,13 @@ function obtenerResto(x, y) {
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
-  return ((num % 2) == 0) ? true : false;
+  return ((num % 2) == 0);
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
-  return ((num % 2) != 0) ? true : false;
+  return ((num % 2) != 0);
 }
 
 function elevarAlCuadrado(num) {
@@ -132,12 +132,10 @@ function esPositivo(numero) {
   // Si el número es positivo, devolver ---> "Es positivo"
   // Si el número es negativo, devolver ---> "Es negativo"
   // Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es positivo";
-  } else if (numero < 0) {
-    return "Es negativo";
+  if (numero === 0) {
+    return false;
   }
-  return false;
+  return (numero > 0) ? `Es positivo` : `Es negativo`;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -149,13 +147,13 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
-  return nombre + " " + apellido;
+  return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Nahuel" -> "Hola Nahuel!"
-  return "Hola " + nombre + "!";
+  return `Hola ${nombre}!`;
 }
 
 function deEuroAdolar(euro) {
