@@ -59,8 +59,7 @@ function nuevoUsuario(nombre, email, password) {
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
-  return ((usuario["email"] !== null) && (usuario["email"] !== undefined))
-    ? true : false;
+  return ((usuario["email"] !== null) && (usuario["email"] !== undefined));
 }
 
 
@@ -76,7 +75,7 @@ function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
-  return (usuario["password"] === password) ? true : false;
+  return (usuario["password"] === password);
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
