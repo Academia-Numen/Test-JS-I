@@ -7,7 +7,7 @@ function devolverPrimerElemento(array) {
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
-  return array[array.length - 1];
+  return array.at(-1);
 }
 
 function obtenerLargoDelArray(array) {
@@ -106,8 +106,7 @@ function diaDeLaSemana(numeroDeDia) {
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
-  let numberInString = String(n);
-  return (numberInString[0] === "9") ? true : false;
+  return (n.toString().at(0) === "9");
 }
 
 function todosIguales(arreglo) {
